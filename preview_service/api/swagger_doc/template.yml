@@ -1,0 +1,48 @@
+openapi: '3.0.2'
+info:
+  title: 'Metadata Service'
+  description: 'Used to provide and update metadata, such as table & column description, stored in either neo4j or apache atlas.'
+  version: '1.1.7'
+
+components:
+  schemas:
+      ColumnItem:
+          type: object
+          properties:
+              column_name:
+                  type: string
+                  description: 'column name'
+              column_type:
+                  type: string
+                  description: 'column type'
+      PreviewData:
+          type: object
+          properties:
+            database:
+              description: 'Database name'
+              type: string
+            schema:
+              description: 'Schema name'
+              type: string
+            table_name:
+              description: 'Table name'
+              type: string
+            columns:
+                type: array
+                description: 'list of column items'
+                items:
+                    $ref: '#/components/schemas/ColumnItemSchema'
+            data:
+                type: array
+
+            error_text:
+              description: 'Table description'
+              type: string
+
+      ErrorResponse:
+          type: object
+          properties:
+              message:
+                  type: string
+                  description: 'A simple description of what went wrong'
+                  example: 'An Exception encountered while processing your request'

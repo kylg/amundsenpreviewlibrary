@@ -1,0 +1,41 @@
+Search for user
+Used by the frontend API to search for users
+---
+tags:
+  - 'preview_put'
+consumes:
+    - multipart/form-data
+parameters:
+  - name: file
+    in: formData
+    type: file
+    required: true
+    description: Upload your file
+  - name: database
+    in: formData
+    type: integer
+    required: true
+    description: database name of the table of the preview data
+  - name: dbschema
+    in: formData
+    type: string
+    required: true
+    description: database name of the table of the preview data
+  - name: tableName
+    in: formData
+    type: string
+    required: true
+    description: database name of the table of the preview data
+responses:
+  200:
+    description: upload preview data of a table
+    content:
+      application/json:
+        schema:
+            $ref: '#/components/schemas/ErrorResponse'
+  500:
+    description: Exception encountered while uploading table preview data
+    content:
+      application/json:
+        schema:
+            $ref: '#/components/schemas/ErrorResponse'

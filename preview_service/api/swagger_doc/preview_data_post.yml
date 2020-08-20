@@ -1,0 +1,38 @@
+Search for user
+Used by the frontend API to search for users
+---
+tags:
+  - 'preview'
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+        id : preview
+        required:
+            - database
+            - schema
+            - tableName
+        properties:
+            database:
+                type: string
+                description: database
+            schema:
+                type: string
+                description: schema
+            tableName:
+                type: string
+                description: table name
+responses:
+  200:
+    description: preview data of table
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/PreviewData'
+  500:
+    description: Exception encountered while getting user
+    content:
+      application/json:
+        schema:
+          $ref: '#/components/schemas/ErrorResponse'
