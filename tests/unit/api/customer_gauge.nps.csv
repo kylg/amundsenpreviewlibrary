@@ -1,0 +1,11 @@
+brand,channel,country,currency,customer_issue,customer_number,division,document_date,email_sent_date,emea_star,factory
+AEG,Online,AT,EUR,,3609843,Major,2019-04-11T10:54:09.000Z,2019-04-11T10:54:09.000Z,Non-Star,PLT=Olawa
+AEG,Online,AT,EUR,,3574032,Major,2019-04-11T11:20:39.000Z,2019-04-11T11:20:39.000Z,Star,PLY=Siewierz
+Electrolux,Online,CH,CHF,,3576280,Major,2019-04-11T11:58:19.000Z,2019-04-11T11:58:19.000Z,ML,PLS=Swidnica
+Electrolux,Online,PL,PLN,,3577112,Major,2019-04-11T12:03:32.000Z,2019-04-11T12:03:32.000Z,Non-Star,UKE=LLC_Electrolux_Ukrain
+Electrolux,Online,PL,PLN,,756706,Major,2019-04-11T10:20:01.000Z,2019-04-11T10:20:01.000Z,Non-Star,PLT=Olawa
+Electrolux,Online,PL,PLN,,3603956,Major,2019-04-11T10:36:45.000Z,2019-04-11T10:36:45.000Z,Non-Star,PLT=Olawa
+Zanussi,Online,NL,EUR,,3604964,Major,2019-04-11T10:49:21.000Z,2019-04-11T10:49:21.000Z,Non-Star,PLT=Olawa
+Electrolux,Online,PL,PLN,,3610656,Major,2019-04-11T10:55:09.000Z,2019-04-11T10:55:09.000Z,Non-Star,PLY=Siewierz
+AEG,Online,DE,EUR,,3578115,Major,2019-04-11T12:14:18.000Z,2019-04-11T12:14:18.000Z,Star,DGT=Rothenburg
+Zanussi,Online,RO,RON,,3583770,Major,2019-04-11T13:09:26.000Z,2019-04-11T13:09:26.000Z,Non-Star,ROB=Satu_Mare

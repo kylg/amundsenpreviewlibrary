@@ -1,0 +1,2 @@
+include requirements.txt
+include preview_service/api/swagger_doc/*.yml
