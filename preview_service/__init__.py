@@ -59,6 +59,8 @@ def create_app(*, config_module_class: str) -> Flask:
         app = class_obj(__name__, **flask_kwargs_dict)
 
     else:
+        from werkzeug.serving import WSGIRequestHandler
+        WSGIRequestHandler.protocol_version = "HTTP/1.1"
         app = Flask(__name__)
 
     if CORS_ENABLED:
